@@ -32,16 +32,14 @@ function editComment(id, text) {
 function thumbUpComment(id) {
     return {
         type: THUMB_UP_COMMENT,
-        id,
-        rating: rating + 1
+        id
     }
 }
 
 function thumbDownComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id,
-        rating: rating - 1
+        id
     }
 }
 
