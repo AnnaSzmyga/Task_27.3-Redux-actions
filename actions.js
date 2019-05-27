@@ -10,8 +10,7 @@ function addComment(text) {
     return {
         type: ADD_COMMENT,
         text,
-        id: uuid.v4(),
-        rating: 0
+        id: uuid.v4()
     }
 }
 
@@ -45,3 +44,9 @@ function thumbDownComment(id) {
         rating: rating - 1
     }
 }
+
+export ADD_COMMENT;
+export REMOVE_COMMENT;
+export EDIT_COMMENT;
+export THUMB_UP_COMMENT;
+export THUMB_DOWN_COMMENT;
